@@ -66,8 +66,8 @@ Blueprint 是免費且開源的軟體。我們在 Pterodactyl 模組化社群中
 <!-- Related Links -->
 <br/><h2 align="center">🔗 相關連結</h2>
 
-[**Pterodactyl**](https://pterodactyl.io/) 是一個免費、開源的遊戲伺服器管理面板，使用 PHP、React 與 Go 打造。 [[**繁體中文版**](https://github.com/Lingyu-ILY/pterodactyl-panel-tw)]\
-[**BlueprintFramework/docker**](https://github.com/BlueprintFramework/docker) 是用於以 Docker 執行 Blueprint 與 Pterodactyl 的映像檔。 [[**繁體中文版**](https://github.com/Lingyu-ILY/blueprint-docker-tw)]\
+[**Pterodactyl**](https://pterodactyl.io/) 是一個免費、開源的遊戲伺服器管理面板，使用 PHP、React 與 Go 打造。 [[**繁體中文版**](https://github.com/Lingyu-ILY/pterodactyl-panel-tc)]\
+[**BlueprintFramework/docker**](https://github.com/BlueprintFramework/docker) 是用於以 Docker 執行 Blueprint 與 Pterodactyl 的映像檔。 [[**繁體中文版**](https://github.com/Lingyu-ILY/blueprint-docker-tc)]\
 [**BlueprintFramework/templates**](https://github.com/BlueprintFramework/templates) 是提供擴充套件開發初始化模板的儲存庫。\
 [**BlueprintFramework/web**](https://github.com/BlueprintFramework/web) 是我們開源的文件與形象網站.
 
