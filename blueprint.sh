@@ -133,8 +133,8 @@ depend() {
   if [[ $DEPEND_MISSING == true ]]; then
     PRINT FATAL "Some framework dependencies couldn't be found or have issues. This is usually NOT a bug, do not report it as such."
 
-    if [[ $nodeMajor -lt 20 ]]; then
-      PRINT FATAL "Unsupported dependency \"node\" <20.x. (Requires >20.x)"
+    if [[ $nodeMajor -lt 22 ]]; then
+      PRINT FATAL "Unsupported dependency \"node\" <22.x. (Requires >22.x)"
     fi
 
     if ! [ -x "$(command -v unzip)"                        ]; then PRINT FATAL "Missing dependency \"unzip\".";   fi
