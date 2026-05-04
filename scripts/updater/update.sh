@@ -12,6 +12,6 @@ UpdaterInstall() {
   # Check if nodejs version is sufficient
   nodeMajor=$(node -v | awk -F. '{print $1}' | sed 's/[^0-9]*//g')
   if [[ $nodeMajor -lt 22 ]]; then
-    PRINT ERROR "Grace period for Node.js <22 is over. Please upgrade it to a new version then rerun the upgrade command."
+    PRINT FATAL "Grace period for Node.js <22 is over. Please upgrade it to a new version then rerun the upgrade command."
   fi
 }
