@@ -176,10 +176,6 @@ Command() {
   mv blueprint .blueprint
   hide_progress
   BLUEPRINT_ENVIRONMENT="upgrade2" PROGRESS_NOW="$PROGRESS_NOW" PROGRESS_TOTAL="$PROGRESS_TOTAL" bash blueprint.sh
-  # shellcheck disable=2181
-  if [[ $? != "0" ]]; then
-    update_fail=true
-  fi
 
   ((PROGRESS_NOW++))
 

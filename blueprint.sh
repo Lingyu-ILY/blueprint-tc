@@ -105,7 +105,7 @@ source scripts/libraries/lock.sh          || missinglibs+="[lock]"
 
 cdhalt() { PRINT FATAL "Attempted navigation into nonexistent directory, halting process."; exit 1; }
 depend() {
-  # Make sure Node.js is version 20 or higher.
+  # Make sure Node.js is version 22 or higher.
   nodeMajor=$(node -v | awk -F. '{print $1}' | sed 's/[^0-9]*//g')
 
   # Check for required (both internal and external) dependencies.
@@ -122,7 +122,7 @@ depend() {
   ! [ -x "$(command -v tput)" ] ||                                                # tput
   ! [ -x "$(command -v node)" ] ||                                                # node
   { ! [ -x "$(command -v inotifywait)" ] && [[ "$DeveloperWatch" == true ]]; } || # inotify-tools (devdep)
-  [[ $nodeMajor -lt 17 ]] ||                                                      # node version
+  [[ $nodeMajor -lt 22 ]] ||                                                      # node version
   ! [ "$(ls "node_modules/"*"webpack"* 2> /dev/null)"   ] ||                      # webpack
   ! [ "$(ls "node_modules/"*"react"* 2> /dev/null)"     ] ||                      # react
   [[ $missinglibs != "" ]]; then                                                  # internal
