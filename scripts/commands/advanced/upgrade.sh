@@ -23,6 +23,8 @@ Command() {
   export remote_branch
   export fetched_version
 
+  local update_fail
+
   if [[ -d '.update' ]]; then
     PRINT WARNING ".update already exists! Replacing it."
     rm -rf .update
@@ -174,12 +176,21 @@ Command() {
   mv blueprint .blueprint
   hide_progress
   BLUEPRINT_ENVIRONMENT="upgrade2" PROGRESS_NOW="$PROGRESS_NOW" PROGRESS_TOTAL="$PROGRESS_TOTAL" bash blueprint.sh
+  # shellcheck disable=2181
+  if [[ $? != "0" ]]; then
+    update_fail=true
+  fi
 
   ((PROGRESS_NOW++))
 
   cleanup
 
   # Tell user that update has finished
+  if [[ $update_fail == "true" ]]; then
+    PRINT FATAL "Update failed, please resolve errors above and try again"
+    hide_progress
+    exit 1
+  fi
   PRINT SUCCESS "Update finished!"
   hide_progress
   exit 0
