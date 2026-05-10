@@ -475,5 +475,12 @@ case "$cmd" in
 esac
 
 shift 2
+
+# prevent interesting freakout when passing "*" as an argument
+if [[ $* == *"*"* ]]; then
+  PRINT FATAL "\"*\" cannot be used as an argument."
+  exit 2
+fi
+
 Command "$@"
 exit 0
