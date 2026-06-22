@@ -15,7 +15,7 @@ Refer to the [installation guide](https://blueprint.zip/guides/admin/install).
 ## 捐款與貢獻
 Blueprint 是免費且開源的軟體。我們在 Pterodactyl 模組化社群中扮演重要角色，並提供工具協助開發者把想法化為現實。為了維持所有服務正常運作，我們非常依賴 [捐款](https://hcb.hackclub.com/blueprint/donations)。我們同時也是非營利組織！
 
-如果您是企業組織，[歡迎考慮成為我們的企業贊助夥伴](https://hcb.hackclub.com/donations/start/blueprint/tiers/392)。Blueprint 提供豐富的指南與文件資源，協助更多新進開發者踏入主機託管產業，也為企業開啟接觸新人才、進一步推動營運成長的機會。
+如果您是企業組織，[歡迎考慮成為我們的企業贊助夥伴](https://hcb.hackclub.com/donations/start/blueprint/tiers/5qKhd3)。Blueprint 提供豐富的指南與文件資源，協助更多新進開發者踏入主機託管產業，也為企業開啟接觸新人才、進一步推動營運成長的機會。
 
 [**捐款給我們的非營利組織**](https://hcb.hackclub.com/donations/start/blueprint) or [查看我們的公開財務](https://hcb.hackclub.com/blueprint).
 

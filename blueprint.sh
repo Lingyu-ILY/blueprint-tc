@@ -11,7 +11,7 @@
 BLUEPRINT_ENGINE="solstice"
 REPOSITORY="BlueprintFramework/framework"
 REPOSITORY_BRANCH="main"
-VERSION="rolling" #;
+VERSION="beta-2026-05" #;
 
 FOLDER=$(realpath "$(dirname "$0" 2> /dev/null)" 2> /dev/null) || FOLDER="$BLUEPRINT__FOLDER"
 OWNERSHIP="www-data:www-data" #;
@@ -477,10 +477,12 @@ esac
 shift 2
 
 # prevent interesting freakout when passing "*" as an argument
-if [[ $* == *"*"* ]]; then
-  PRINT FATAL "\"*\" cannot be used as an argument."
-  exit 2
-fi
+for arg in "$@"; do
+  if [[ "$arg" == "*" ]]; then
+    PRINT FATAL "\"*\" cannot be used as an argument."
+    exit 2
+  fi
+done
 
 Command "$@"
 exit 0
